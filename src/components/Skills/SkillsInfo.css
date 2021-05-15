@@ -1,0 +1,90 @@
+
+.skillsInfo {
+  height: 65vh;
+  width: 95vw;
+  margin: -700px 2% 100px 2%;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  flex-shrink: 1;
+} /* Skills Info Container */
+
+.languageHead {
+  -webkit-text-fill-color: oldlace;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: oldlace;
+  width: 90%;
+  padding: 20px 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-shrink: 1;
+} /* Language Title */
+
+.languages {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 1;
+} /* Language Logos */
+
+.graphicHead {
+  -webkit-text-fill-color: oldlace;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: oldlace;
+  width: 90%;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+} /* Graphics Ui/Ux Title */ 
+
+.graphicPackages {
+  width: 90%;
+  padding: 10px 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 1;
+} /* Graphic Ui/Ux Logos */
+
+@media screen and (max-width: 700px) {
+  .languageHead {
+    color: oldlace;
+    width: 90%;
+    padding: 20px 20px;
+    font-size: 2.1rem;
+    font-weight: 700;
+  }
+  .graphicHead {
+    color: oldlace;
+    width: 90%;
+    font-size: 2.1rem;
+    font-weight: 700;
+    padding: 10px 20px;
+  }
+} /* Media Query Max Width 700px */
+
+
+
+

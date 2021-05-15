@@ -1,0 +1,153 @@
+
+.navbar {
+  background-image: linear-gradient(-225deg, rgba(35, 6, 162,.8) 10%,
+   rgba(69, 36, 107, .8) 35%, rgba(117, 21, 80, .8) 100%);
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+} /* NavBar */
+
+.navLogo {
+  position: fixed;
+  top: 35px;
+  left: 50px;
+  height: 50px;
+  width: 110px;
+} /* NavBar Logo*/
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 100%;
+} /* Nav Container */
+
+.navMenu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 80vw;
+  justify-content: end;
+} /* Nav Menu Setup for 5 Selections*/
+
+.navChoices {
+  justify-self: start;
+  margin-left: 80px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center; 
+} /* Nav Selections Start Position and Centering Text*/
+
+.navItem {
+  height: 80px;
+} /* List Items are 80px which are the Selections */
+
+.navLinks {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  height: 100%;
+} /* Nav Link Text and Properties */
+
+.navLinks:hover {
+  border-bottom: 10px solid #f00;
+  transition: all 0.2s ease-out;
+} /* Nav Link Hover, Red Select line when pushes up 10px */
+
+.fa-bars {
+  color: #fff;
+} /* Hamburg Bars from Fontawesome Lib*/
+
+.menuIcon {
+  display: none;
+} /* Does not Display Hamburg Icon */
+
+
+@media only screen and (max-width: 970px) {
+  .navMenu { 
+    display: none;
+    flex-direction: column;
+    justify-self: start;
+    width: 180px;
+    height: 74vh;
+    position: absolute;
+    top: 84px;
+    left: -970px;
+    border-radius: 0 10px 10px 0;
+    opacity: 0;
+    transition: all .1s ease-out;
+  }
+} /* Transition to Mobile Menu */
+
+@media only screen and (max-width: 960px) {
+
+  .navMenu {
+    background-image: linear-gradient(-225deg, rgba(35, 6, 162,1) 10%, rgba(69, 36, 107, 1) 35%, rgba(117, 21, 80, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-self: right;
+    width: -180px;
+    height: 73.5vh;
+    position: absolute;
+    top: 84px;
+    right: 180px;
+    border-radius: 0 10px 10px 0;
+    opacity: 1;      
+    transition: all 1s ease-out;
+    z-index: 1;
+  } /* Side NavBar when the mobile menu X selected */
+
+  .navMenu.active {
+    background-image: linear-gradient(-225deg, rgba(35, 6, 162,1) 10%, rgba(69, 36, 107, 1) 35%, rgba(117, 21, 80, 1) 100%);
+    left: 0;
+    opacity: 1;
+    transition: all .5s ease-out;
+    z-index: 1;
+   } /* Side NavBar when the Mobile menu bars selected */
+
+   .navLinks {
+      text-align: center;
+      padding: 1rem;
+      width: 100%;
+      display: table;
+   } /* Sidebar NavBar Setup */
+
+   .navLinks:hover {
+    margin-top: -10px;
+    margin-bottom: 10px;
+  } /* Mobile Nav Item hover Shitfs hover select up*/
+
+   .menuIcon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 65%);
+      font-size: 1.8rem;
+      cursor: pointer;
+   } /* Positions my Hamburg and X on the NavBar */
+
+   .fa-times { 
+      color: #fff;
+      font-size: 2rem;
+   } /* Hamburg X from Fontawesome Lib */
+}
+

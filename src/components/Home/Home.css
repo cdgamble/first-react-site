@@ -1,0 +1,235 @@
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+} /* video in the background*/
+
+.homeContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+} /* Home screen container */
+
+  #name {
+    -webkit-text-fill-color: oldlace;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: oldlace;
+    font-family: 'Oleo Script', cursive;
+    height: 100vh;
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 5em;
+  } /* Developers Name in script */
+
+  #dev {
+    -webkit-text-fill-color: oldlace;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: oldlace;
+    height: 55vh;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    font-size: 5em;
+  } /* Web & Mobile Dev Block*/
+
+  #site {
+    -webkit-text-fill-color: oldlace;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: oldlace;
+    height: 55vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 5em;
+  } /* Website Awaits Block */
+
+  .waiting {
+    -webkit-text-fill-color: oldlace;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: oldlace;
+    margin-top: 8px;
+    font-weight: 900;
+    font-size: 40px;
+  } /* Waiting for Text */
+
+.building {
+  -webkit-text-fill-color: oldlace;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  color: oldlace;
+  margin-top: 8px;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 20px;
+} /* Start Building Text*/
+
+  .rollingTextBox {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    margin-top: 0px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 1;
+    align-items: center;
+  } /* Rolling Text Block */
+
+  .rollingText {
+    -webkit-text-fill-color: #00d9ff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 710px;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: infinite;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-delay: .5s;
+  } /* Rolling Text */
+
+.btnGetStarted {
+  margin-top: 80px;
+  margin-bottom: 45px;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+} /* Get Started Button */
+
+  .btnGetStarted:hover {
+    transition: all 0.3s ease-out;
+    background: #fff;
+    color: #000;
+    transition: 250ms;
+  } /* Get Started Button Hover */
+
+.contactLink {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px 30px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  height: 100%;
+} /* Get Started Click to Contact Link*/
+
+  .contactLink:Hover {
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  } /* Get Started Click to Contact Link Hover*/
+
+
+@keyframes rotate {
+  0%, 20% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  20%, 60% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  80%, 100% {
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+} /* Rolling Text Animation Keyframes*/
+
+@media screen and (max-width: 1200px) {
+  #name {
+    font-size: 60px;
+  }
+  #dev {
+    font-size: 60px;
+  }  
+  #site {
+    font-size: 60px;
+    margin-bottom: 25px;
+  }
+  .waiting {
+    font-size: 35px;
+    margin-top: -10px;
+  }
+  .building {
+    font-size: 35px;
+  }
+  .rollingText {
+    font-size: 60px;
+  }
+} /* Media Query Max Width 1200 */
+
+@media screen and (max-width: 960px) {
+  #name {
+    font-size: 50px;
+  }
+  #dev {
+    font-size: 50px;
+  } 
+  #site {
+     font-size: 50px;
+  }
+  .waiting {
+    font-size: 30px;
+    margin-top: -6px;
+  }
+  .building {
+    font-size: 30px;
+  }
+  .rollingText {
+    font-size: 50px;
+  }
+} /* Media Query Max Width 960 */
+
+@media screen and (max-width: 630px) {
+  #name {
+    font-size: 40px;
+  }
+  #dev {
+    font-size: 40px;
+  }
+  #site {
+    font-size: 40px;
+  }
+  .waiting {
+    font-size: 28px;
+    margin-top: 1px;
+  }
+  .building {
+    font-size: 28px;
+  }
+  .rollingText {
+    font-size: 40px;
+  }
+  .btnMobile {
+    display: block;
+    text-decoration: none;
+  }
+  .btn {
+    width: 100%;
+  }
+} /* Media Query Max Width 630 */

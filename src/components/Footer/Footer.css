@@ -1,0 +1,63 @@
+
+.footerContainer {
+  height: 35vh;
+  width: 100%;
+  margin-top: 0px;
+  background-image: linear-gradient(-225deg, #2206a0 10%, #46246d 35%, #751550 100%);
+  color: #fff;
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} /* Footer Container */
+
+#footerLeft{
+  margin-top: -25px;
+  margin-bottom: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+} /* Footer Left Side */
+
+.footerSocialIcons a {
+  margin: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  display: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+} /* Social Icon Anchor Tags */
+
+.footerSocialIcons a:hover {
+  background-color: #e91e63;
+} /* Social Icon Hover */
+
+.footerRight {
+  margin-top: -50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 1;
+} /* Footer Right Side */
+
+.footerInfo {
+  margin: 2% auto;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+} /* Footer Right Side Block of Text */
+
+.footerInfo p {
+  margin-top: -57px;
+  margin-bottom: 54px;
+  padding: 3px 0px;
+  font-size: 1.25rem;
+} /* Footer Info P Tags */
+
+.footer {
+  margin-top: -128px;
+  z-index: 1;
+} /* Move footer to start in Contact Screen */

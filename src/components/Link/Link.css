@@ -1,0 +1,13 @@
+.navLinks {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+} /* NavLinks */
+
+.navLinks:hover {
+   border-bottom: 7px solid #f00;
+   transition: all 0.2s ease-out;
+} /* Nav Link Hover, Red Select line when pushes up 10px */

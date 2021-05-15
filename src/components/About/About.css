@@ -1,0 +1,20 @@
+
+.aboutContainer {
+  height: 100vh;
+  width: 100%;
+  margin-top: 0px;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} /* About Container*/
+
+.title {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  margin-left: 55px;
+  font-size: 3rem;
+  font-weight: 700;
+} /* About Section Title*/

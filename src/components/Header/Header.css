@@ -1,0 +1,7 @@
+.Header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background: url("../../images/headerBkg.jpg");
+  background-position: center center;
+} /* Header Image */
