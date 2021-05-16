@@ -12,7 +12,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navContainer'>
-          <div name='Home' className='navChoices' onClick={MobileMenu}>
+          <div name='Home' className='navChoices'>
             <a href='#Home'><img src={logo} className='navLogo' alt='logo'/></a>
           </div>
           <div className='menuIcon' onClick={handleClick}>
