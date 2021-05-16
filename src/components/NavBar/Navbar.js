@@ -12,9 +12,9 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navContainer'>
-          <nav name='home' className='navChoices' onClick={MobileMenu}>
-            <img src={logo} className="navLogo" alt="logo" />
-          </nav>
+          <div name='Home' className='navChoices' onClick={MobileMenu}>
+            <a href='#Home'><img src={logo} className='navLogo' alt='logo'/></a>
+          </div>
           <div className='menuIcon' onClick={handleClick}>
               <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
